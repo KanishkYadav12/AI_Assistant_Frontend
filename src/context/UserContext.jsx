@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { createContext, useEffect, useState } from "react";
-import { serverUrl } from "../.env.local";
-
+const serverUrl = import.meta.env.VITE_SERVER_URL;
 export const userDataContext = createContext();
 
 function UserContext({ children }) {
